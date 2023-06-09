@@ -4,9 +4,9 @@ services:
   postgres:
     image: postgres:15
     environment:
-      - POSTGRES_DB=cantera_songs
+      - POSTGRES_DB=cantera_music
       - POSTGRES_USER=abril
-      - POSTGRES_PASSWORD=v9TNQqJb59QMHrwmZLtIVMtr3fgfzEsc
+      - POSTGRES_PASSWORD=ob4dOyaRnj7eOVNZzRd50YrQLbOkboP1
     ports:
       - 5432:5432
     volumes:

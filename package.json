@@ -30,6 +30,7 @@
     "node": "^19.8.1",
     "nodemon": "^2.0.22",
     "pg": "^8.10.0",
+    "pg-hstore": "^2.3.4",
     "sequelize": "^6.6.5",
     "sequelize-cli": "^6.2.0"
   }
