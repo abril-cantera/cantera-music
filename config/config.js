@@ -8,8 +8,8 @@ const config = {
   dbPassword: process.env.DB_PASSWORD,
   dbHost: process.env.DB_HOST,
   dbName: process.env.DB_NAME,
-  dbPort: process.env.DB_PORT,
   dbUrl: process.env.DATABASE_URL,
+  dbPort: process.env.DB_PORT,
   //
   bucketName: process.env.AWS_BUCKET_NAME,
   bucketRegion: process.env.AWS_BUCKET_REGION,
