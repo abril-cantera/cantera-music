@@ -6,7 +6,7 @@ services:
     environment:
       - POSTGRES_DB=cantera_music
       - POSTGRES_USER=abril
-      - POSTGRES_PASSWORD=ob4dOyaRnj7eOVNZzRd50YrQLbOkboP1
+      - POSTGRES_PASSWORD=v9TNQqJb59QMHrwmZLtIVMtr3fgfzEsc
     ports:
       - 5432:5432
     volumes:
