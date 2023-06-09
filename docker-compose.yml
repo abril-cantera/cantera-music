@@ -1,0 +1,21 @@
+version: "3.3"
+
+services:
+  postgres:
+    image: postgres:15
+    environment:
+      - POSTGRES_DB=cantera_songs
+      - POSTGRES_USER=abril
+      - POSTGRES_PASSWORD=v9TNQqJb59QMHrwmZLtIVMtr3fgfzEsc
+    ports:
+      - 5432:5432
+    volumes:
+      - ./postgres_data:/var/lib/postgresql/data
+
+  pgadmin:
+    image: dpage/pgadmin4
+    environment:
+      - PGADMIN_DEFAULT_EMAIL=admin@mail.com
+      - PGADMIN_DEFAULT_PASSWORD=root
+    ports:
+      - 5050:80
