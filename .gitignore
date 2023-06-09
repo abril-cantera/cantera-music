@@ -1,0 +1,7 @@
+node_modules/
+postgres_data/
+postgres_data
+.env
+package-lock.json
+uploads/
+node_modules
