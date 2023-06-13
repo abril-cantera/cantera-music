@@ -23,18 +23,23 @@
     "prettier": "^2.3.2"
   },
   "dependencies": {
+    "@aws-sdk/client-s3": "^3.325.0",
+    "@aws-sdk/s3-request-presigner": "^3.326.0",
+    "aws": "^0.0.3-2",
+    "aws-sdk": "^2.1367.0",
     "@faker-js/faker": "^7.6.0",
     "@hapi/boom": "^9.1.4",
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",
-    "express": "^4.17.1",
+    "express": "^4.18.2",
     "faker": "^5.5.3",
-    "joi": "^17.4.2",
+    "joi": "^17.9.1",
     "mysql2": "^3.2.0",
+    "nodemon": "^2.0.22",
     "pg": "^8.10.0",
     "pg-hstore": "^2.3.4",
-    "sequelize": "^6.29.3",
-    "sequelize-cli": "^6.6.0"
+    "sequelize": "^6.6.5",
+    "sequelize-cli": "^6.2.0"
   },
   "engines": {
     "node": "16.8.0"
