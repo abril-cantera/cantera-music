@@ -4,9 +4,9 @@ services:
   postgres:
     image: postgres:13
     environment:
-      - POSTGRES_DB=cantera_music
+      - POSTGRES_DB=cantera_music_tlot
       - POSTGRES_USER=abril
-      - POSTGRES_PASSWORD=ob4dOyaRnj7eOVNZzRd50YrQLbOkboP1
+      - POSTGRES_PASSWORD=uXffKqFuUWPwRkqtqbnMn893YUWAoxGM
     ports:
       - 5432:5432
     volumes:

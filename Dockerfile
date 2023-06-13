@@ -11,7 +11,7 @@ ENV NODE_ENV=$NODE_ENV
 ENV DATABASE_URL=$DATABASE_URL
 
 COPY package*.json ./
-RUN npm ci
+RUN npm i
 
 COPY . .
 
