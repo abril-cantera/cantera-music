@@ -45,19 +45,6 @@ router.post('/',
   }
 )
 
-// router.post('/file',
-//   validatorHandler(createCategoriesSchema, 'body'),
-//   async (req, res, next) => {
-//     try {
-//       const body = req.body;
-//       const newCategory = await service.create(body)
-//       res.status(201).json(newCategory);
-//     } catch (error) {
-//       next(error)
-//     }
-//   }
-// )
-
 
 router.delete('/:id',
   validatorHandler(getCategoriesSchema, 'params'),

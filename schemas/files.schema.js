@@ -23,4 +23,15 @@ const getFilesSchema = Joi.object({
   id: id.required()
 })
 
-module.exports = { createFilesSchema, getFilesSchema }
+const updateFilesSchema = Joi.object({
+  nameFile: nameFile,
+  nameAuthor: nameAuthor,
+  imageUrl: imageUrl,
+  categoryId: categoryId,
+  genderId: genderId,
+});
+
+module.exports = {
+  createFilesSchema, getFilesSchema,
+  updateFilesSchema
+}

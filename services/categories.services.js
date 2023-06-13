@@ -33,13 +33,6 @@ class CategoriesServices {
     await category.destroy();
     return { id };
   }
-
-  // Find any same values
-  async validatorConcidences() {
-    const categories = await models.Categories.findAll();
-    console.log(categories)
-    // return categories;
-  }
 }
 
 module.exports = CategoriesServices;

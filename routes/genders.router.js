@@ -32,19 +32,6 @@ router.get('/:id',
   }
 )
 
-router.post('/',
-  validatorHandler(createGendersSchema, 'body'),
-  async (req, res, next) => {
-    try {
-      const body = req.body;
-      const newCategory = await service.create(body)
-      res.status(201).json(newCategory);
-    } catch (error) {
-      next(error)
-    }
-  }
-)
-
 router.post('/file',
   validatorHandler(createGendersSchema, 'body'),
   async (req, res, next) => {

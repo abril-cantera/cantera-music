@@ -22,7 +22,6 @@ class FilesServices {
   // DB ###########################
   // crear funcion que permita subir archivos y obtener url
   async cargarFile(file) {
-    // const stream = fs.createReadStream(file.tempFilePath)
     const contenidoArchivo = fs.readFileSync(file.tempFilePath);
     // parametros
     const uploadParams = {
@@ -76,6 +75,12 @@ class FilesServices {
   async findOne(id) {
     const file = await models.Files.findByPk(id);
     return file;
+  }
+
+  async update(id, changes) {
+    const file = await this.findOne(id);
+    const rta = await file.update(changes);
+    return rta;
   }
 
   // Delete file by ID
