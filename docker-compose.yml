@@ -2,11 +2,11 @@ version: "3.3"
 
 services:
   postgres:
-    image: postgres:15
+    image: postgres:13
     environment:
       - POSTGRES_DB=cantera_music
       - POSTGRES_USER=abril
-      - POSTGRES_PASSWORD=v9TNQqJb59QMHrwmZLtIVMtr3fgfzEsc
+      - POSTGRES_PASSWORD=ob4dOyaRnj7eOVNZzRd50YrQLbOkboP1
     ports:
       - 5432:5432
     volumes:
@@ -19,3 +19,24 @@ services:
       - PGADMIN_DEFAULT_PASSWORD=root
     ports:
       - 5050:80
+
+  mysql:
+    image: mysql:5
+    restart: always
+    environment:
+      - MYSQL_DATABASE=my_store
+      - MYSQL_USER=root
+      - MYSQL_ROOT_PASSWORD=admin123
+      - MYSQL_PORT=3306
+    ports:
+      - 3306:3306
+    volumes:
+      - ~/mysql_data:/var/lib/mysql
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    environment:
+      - MYSQL_ROOT_PASSWORD=admin123
+      - PMA_HOST=mysql
+    ports:
+      - 8080:80

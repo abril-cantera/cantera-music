@@ -1,7 +1,7 @@
 const { ValidationError } = require('sequelize');
 const boom = require('@hapi/boom');
 
-function logErrors(err, req, res, next) {
+function logErrors (err, req, res, next) {
   console.error(err);
   next(err);
 }

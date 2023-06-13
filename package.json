@@ -1,37 +1,42 @@
 {
-  "name": "cantera-sound-backend",
+  "name": "my-store",
   "version": "1.0.0",
-  "description": "Actualizacion 1",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "dev": "nodemon index.js",
     "start": "node index.js",
+    "lint": "eslint",
     "migrations:generate": "sequelize-cli migration:generate --name",
     "migrations:run": "sequelize-cli db:migrate",
     "migrations:revert": "sequelize-cli db:migrate:undo",
-    "migrations:delete": "sequelize-cli db:migrate:undo:all",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "migrations:delete": "sequelize-cli db:migrate:undo:all"
   },
   "keywords": [],
-  "author": "Abril Gonzalez <abril.gonzalez.cantera@gmail.com>",
+  "author": "",
   "license": "ISC",
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.1",
+    "nodemon": "^2.0.12",
+    "prettier": "^2.3.2"
+  },
   "dependencies": {
-    "@aws-sdk/client-s3": "^3.325.0",
-    "@aws-sdk/s3-request-presigner": "^3.326.0",
+    "@faker-js/faker": "^7.6.0",
     "@hapi/boom": "^9.1.4",
-    "aws": "^0.0.3-2",
-    "aws-sdk": "^2.1367.0",
-    "boom": "^7.3.0",
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",
-    "express": "^4.18.2",
-    "express-fileupload": "^1.4.0",
-    "joi": "^17.9.1",
-    "node": "^19.8.1",
-    "nodemon": "^2.0.22",
+    "express": "^4.17.1",
+    "faker": "^5.5.3",
+    "joi": "^17.4.2",
+    "mysql2": "^3.2.0",
     "pg": "^8.10.0",
     "pg-hstore": "^2.3.4",
-    "sequelize": "^6.6.5",
-    "sequelize-cli": "^6.2.0"
+    "sequelize": "^6.29.3",
+    "sequelize-cli": "^6.6.0"
+  },
+  "engines": {
+    "node": "16.8.0"
   }
 }
