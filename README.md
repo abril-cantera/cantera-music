@@ -1,14 +1,12 @@
 Este proyecto es una Api Rest creada de manera permanete con una base de datos en postgresql
 Conocimientos adquiridos en el curso de backend con nodejs y postgresql
-el linnk del repositorio en github es https://github.com/jeliasalvaradoa/mystoreapi
-y el despliegue se hizo en render.com https://mystoreapi.onrender.com/
+ de platzi
+y el despliegue se hizo en render.com
 la base de datos de postgresql se creo en render.com
 Los endpoint son (
-/api/v1/users,
-/api/v1/customers,
-/api/v1/orders/id,
-/api/v1/categories,
-/api/v1/products
+/api/v1/files,
+/api/v1/genres,
+/api/v1/categories
 )
 ***Pasos para el deploy*** 
 
